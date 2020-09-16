@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".TicActivityPvc">
+
+    <TableLayout
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:padding="10dp">
+
+        <TableRow>
+            <Button
+                android:id="@+id/button_easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:onClick="easyClick"
+                android:text="Easy"
+                />
+
+            <Button
+                android:id="@+id/button_hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:onClick="hardClick"
+                android:text="hard"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/ticBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/playerInfo"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:padding="10dp"
+        >
+
+        <!--Row 1-->
+        <TableRow>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:onClick="cellClick"
+                />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:onClick="cellClick"
+                />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:onClick="cellClick"
+                />
+
+        </TableRow>
+
+        <!--Row 2-->
+        <TableRow>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:onClick="cellClick"
+                />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:onClick="cellClick"
+                />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:onClick="cellClick"
+                />
+
+        </TableRow>
+
+        <!--Row 3-->
+        <TableRow>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:onClick="cellClick"
+                />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:onClick="cellClick"
+                />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:onClick="cellClick"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/playerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#424242"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:padding="10dp"
+        android:layout_below="@+id/difficulty"
+        />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticBoard"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:text="RESET"
+        android:textSize="20sp"
+        android:onClick="resetGame"
+        />
+</RelativeLayout>

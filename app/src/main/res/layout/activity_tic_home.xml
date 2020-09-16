@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:screenOrientation="portrait"
+    tools:context=".TicActivityHome">
+
+    <TableRow
+        android:gravity="center"
+        android:padding="50dp">
+        <Button
+            android:id="@+id/button_pvp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player VS Player"
+            app:layout_constraintBottom_toTopOf="@+id/button_hangman"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="pvpClick"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:padding="50dp">
+        <Button
+            android:id="@+id/button_pvc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Vs Computer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="pvaClick"/>
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:gravity="center"
+        android:padding="50dp">
+        <Button
+            android:id="@+id/button_ttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tic-Tac-Toe"
+            app:layout_constraintBottom_toTopOf="@+id/button_hangman"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="tttClick"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:padding="50dp">
+        <Button
+            android:id="@+id/button_hangman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hangman"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="hangmanClick"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:padding="50dp">
+        <Button
+            android:id="@+id/gameX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GameX"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </TableRow>
+
+
+</TableLayout>

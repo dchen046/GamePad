@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GamePad</string>
+    <string name="guess_a_letter">Guess a letter</string>
+    <string name="reset">RESET</string>
+    <string name="textview">TextView</string>
+    <string name="xxxxx">XXXXX</string>
+    <string name="letters_used">letters used</string>
+</resources>
